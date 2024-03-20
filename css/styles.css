@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Arimo', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ciudad img, h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.hueco {
+    background-color: rgb(199, 199, 199);
+    width: 60px;
+    height: 31px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.encendido {
+    background-color: orange;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.sol {
+    width: 22px;
+    height: 22px;
+    padding: 1px 0px 0px 1px;
+}
+
+.encendido:hover {
+    background-color: rgb(255, 205, 112);
+}
+
+/* MODO OSCURO */
+
+.apagado {
+    background-color: rgb(0, 68, 255);
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    margin-left: 32px;
+}
+
+.apagado:hover {
+    background-color: rgb(111, 150, 255);
+}
+
+.luna {
+    width: 20px;
+    height: 20px;
+    padding: 2px 0px 0px 2px;
+}
+
+.dark {
+    background-color: black;
+}
+
+.dark h1, .dark h2 {
+    color: rgb(255, 209, 4)
+}
+
+.dark h3, .dark p {
+    color: white;
+}
+
+.off {
+    display: none;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 1281px){
+    #ciudad img {
+        width: 1200px;
+    }
+    p {
+        width: 1000px;
+    }
+
+}
+
+@media (max-width: 1280px){
+    #ciudad img {
+        width: 900px;
+    }
+    p {
+        width: 850px;
+    }
+}
+
+@media (max-width: 800px){
+    #ciudad img {
+        width: 600px;
+    }
+    p {
+        width: 550px;
+    }
+}
+
+@media (max-width: 400px){
+    #ciudad img {
+        width: 400px;
+    }
+    p {
+        width: 350px;
+    }
+}
+
